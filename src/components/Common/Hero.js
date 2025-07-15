@@ -5,6 +5,7 @@ import ActiveComponent from "./ActiveComponent";
 import BackgroundCircles from "./BackgroundCircles";
 import SliderText from "../Slider/SliderText";
 import { useState } from "react";
+import ProfPic from "../../assets/yellow/profile picture (5).png"
 
 const animation = {
   hide: { x: -32, opacity: 0 },
@@ -33,6 +34,18 @@ const Hero = () => {
       id="hero"
       className="relative min-h-screen flex flex-col justify-center items-center p-5 text-center pt-32 z-30 overflow-y-hidden overflow-x-hidden"
     >
+      {/* Profile Image on Left - Responsive */}
+      <div className="absolute top-1/2 left-20 transform -translate-y-1/2 hidden md:block z-40">
+        <div className="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-amber-500 shadow-lg">
+
+          <img
+            src = {ProfPic} // 🔁 Replace with your actual image path
+            alt="Ashok Kumar Sahoo"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
       {!sliderTextLoader && <BackgroundCircles />}
       {sliderTextLoader && (
         <motion.div
@@ -74,13 +87,13 @@ const Hero = () => {
         <ActiveComponent />
       </motion.div>
 
-            {/* Resume Download Section */}
+      {/* Resume Download Section */}
       <div className="mt-12 text-center z-10">
         <p className="text-lg md:text-xl font-medium text-slate-600 dark:text-slate-300 mb-2">
           Here is My Resume
         </p>
         <a
-          href="https://drive.google.com/file/d/1MKTinybVKlomufgpxBe5VmLW9pyaZZt5/view?usp=drive_link" // ⬅️ replace this with your actual link
+          href="https://drive.google.com/file/d/1MKTinybVKlomufgpxBe5VmLW9pyaZZt5/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md transition duration-300"
@@ -89,7 +102,7 @@ const Hero = () => {
         </a>
       </div>
 
-
+      {/* Scroll Down Arrow */}
       <div className="mt-20 mb-0 down-arrow z-0">
         <FaArrowDown className="text-amber-500 text-3xl animate-bounce " />
       </div>

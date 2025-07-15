@@ -2,7 +2,7 @@ import "./SkillsMarquee.css";
 import react from "../../assets/yellow/reacty.png";
 import javascript from "../../assets/yellow/javascripty.png";
 import nextjs from "../../assets/yellow/nexty.png";
-import redux from "../../assets/yellow/reduxy.png";
+// import redux from "../../assets/yellow/reduxy.png";
 import css3 from "../../assets/yellow/css3y.png";
 
 import git from "../../assets/yellow/gity.png";
@@ -18,25 +18,25 @@ const skillsData = [
     image: react,
     title: "React.js",
   },
+  // {
+  //   id: 3,
+  //   image: redux,
+  //   title: "React-Redux",
+  // },
   {
     id: 3,
-    image: redux,
-    title: "React-Redux",
-  },
-  {
-    id: 4,
     image: nextjs,
     title: "Next.js",
   },
 
   {
-    id: 5,
+    id: 4,
     image: css3,
     title: "CSS",
   },
 
   {
-    id: 6,
+    id: 5,
     image: git,
     title: "Git",
   },
