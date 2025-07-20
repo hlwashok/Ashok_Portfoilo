@@ -16,7 +16,7 @@ export const projectsData = [
     title: "Blinkit Clone Website ",
     description: "A fully responsive grocery delivery website inspired by Blinkit, featuring real-time cart, product filters, and localStorage integration.",
     live: "https://qlith-blikint-clone.vercel.app/",
-    code: "https://github.com/Pradeep8118/Qlith--Blikint-Clone",
+    code: "https://github.com/hlwashok/My_projects/tree/main/Blinkit-Clone",
     tech: ["HTML, Tailwind CSS and Javascript"],
     featured: false,
   },
