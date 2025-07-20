@@ -52,9 +52,9 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark cursor-pointer dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl duration-200 shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 group"
             >
               {darkMode ? (
-                <FiSun className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
+                <FiSun className="text-base md:text-sm cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
               ) : (
-                <FiMoon className="text-xl md:text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
+                <FiMoon className="text-base md:text-sm cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
               )}
             </motion.div>
 
@@ -76,9 +76,9 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
             className="ml-4 bg-primary-light dark:bg-ternary-dark cursor-pointer dark:bg-[#101111] bg-gray-100 p-2 md:p-3 rounded-xl shadow-sm shadow-gray-400/30 dark:shadow-[#101111]/70 group"
           >
             {darkMode ? (
-              <FiSun className="text-xl md:text-2xl cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
+              <FiSun className="text-base md:text-sm cursor-pointer text-gray-200 group-hover:text-amber-400 duration-150" />
             ) : (
-              <FiMoon className="text-xl md:text-2xl cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
+              <FiMoon className="text-base md:text-sm cursor-pointer text-gray-600 group-hover:text-indigo-500 duration-150" />
             )}
           </motion.div>
 

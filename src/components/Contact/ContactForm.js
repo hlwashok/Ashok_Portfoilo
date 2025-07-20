@@ -24,10 +24,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_6ip3asu",    // replace with your EmailJS service ID
-        "template_b37mh1d",   // replace with your EmailJS template ID
+        "service_6ip3asu", // replace with your EmailJS service ID
+        "template_b37mh1d", // replace with your EmailJS template ID
         form.current,
-        "XDNY2fzkzUUKcPV4m"        // replace with your EmailJS public key (user ID)
+        "XDNY2fzkzUUKcPV4m" // replace with your EmailJS public key
       )
       .then(
         (result) => {
@@ -88,6 +88,7 @@ const ContactForm = () => {
             placeholderText="Subject"
             ariaLabelName="Subject"
           />
+
           <div className="mt-6">
             <label
               className="block text-lg text-primary-dark dark:text-primary-light mb-2"
@@ -96,7 +97,7 @@ const ContactForm = () => {
               Message
             </label>
             <textarea
-              className="w-full px-5 py-2 bg-white dark:bg-[#0a0a0a] dark:text-white border border-black/10 dark:border-white/10 rounded-md shadow-sm text-md resize-none"
+              className="w-full px-5 py-2 bg-white dark:bg-[#0a0a0a] dark:text-white border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-md resize-none focus:outline-none focus:ring-2 focus:ring-amber-400"
               id="message"
               name="message"
               cols="14"
